@@ -28,31 +28,7 @@ class MovieDetailsVc: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-setMovieDetails()
-configureUI()
-        
-    }
-    
-    func setMovieDetails(){
-        movieImageView.image = UIImage(named: selectedMovie.movieName)
-        
-        movieRatingLabel.text = "\(selectedMovie.rating)"
-        movieRatedLabel.text = selectedMovie.pgRating
-        releaseDateLabel.text = "\(selectedMovie.movieReleaseDate)"
-        
-        actorImageView1.image = UIImage(named: selectedMovie.actors[0])
-        actorImageView2.image = UIImage(named: selectedMovie.actors[1])
-        actorImageView3.image = UIImage(named: selectedMovie.actors[2])
-       
-        actorLabel1.text = selectedMovie.actors[0]
-        actorLabel2.text = selectedMovie.actors[1]
-        actorLabel3.text = selectedMovie.actors[2]
-    }
-    
-    func configureUI(){
-        movieRatedView.layer.cornerRadius = 12
-        movieRatingView.layer.cornerRadius = 12
-        releaseDateView.layer.cornerRadius = 12
+
         
     }
         // Do any additional setup after loading the view.
